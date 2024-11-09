@@ -11,9 +11,29 @@
   --stroke-color: #1E293B;
   --text-color-primary: #f1f5f9;
   --text-color-secondary: #CBD5E1;
+  --font-family: "Archivo", sans-serif;
+  /* bold ou extra bold como faz isso? heading 1 e 2 are supposed to be ExtraBold btw */
+  --font-heading1: Bold 24px/135% var(--font-family);
+  --font-heading2: Bold 16px/140% var(--font-family);
+  --font-heading3: Bold 14px/140% var(--font-family);
+  --font-span: 14px/145% var(--font-family);
+  --font-paragraph: 14px/160% var(--font-family);
 }
 
 body {
   color: var(--text-color-primary);
   background-color: var(--bg-color);
+}
+
+.container {
+  margin-inline: 32px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-secondary);
 }

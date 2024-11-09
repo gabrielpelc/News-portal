@@ -1,0 +1,30 @@
+.sm-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 20px;
+}
+
+#menu-btn, #buscar-btn {
+  display: flex;
+  align-items: center;
+  font: var(--font-heading2);
+  /* verificar essa fonte no global.css */
+  gap: 8px;
+}
+
+#logo {
+  /* pegar essa fonte no google fonts e importar */
+font-family: 'Archivo Black';
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+color: #60A5FA;
+}
+
+.lg-menu ul {
+  font: var(--font-span);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px var(--stroke-color);
+  border-top: ;
+}
