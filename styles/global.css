@@ -13,20 +13,24 @@
   --text-color-secondary: #CBD5E1;
   --font-family: "Archivo", sans-serif;
   /* bold ou extra bold como faz isso? heading 1 e 2 are supposed to be ExtraBold btw */
-  --font-heading1: Bold 24px/135% var(--font-family);
-  --font-heading2: Bold 16px/140% var(--font-family);
-  --font-heading3: Bold 14px/140% var(--font-family);
-  --font-span: 14px/145% var(--font-family);
-  --font-paragraph: 14px/160% var(--font-family);
+  --h1: 800 24px/135% var(--font-family);
+  --h2: 800 16px/140% var(--font-family);
+  --h3: 800 14px/140% var(--font-family);
+  --span: 600 14px/145% var(--font-family);
+  --text: 400 16px/140% var(--font-family);
+  --text-sm: 400 14px/160% var(--font-family);
 }
 
 body {
+  font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
 }
 
 .container {
-  margin-inline: 32px;
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
 }
 
 ul {
@@ -35,5 +39,21 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--text-color-secondary);
+  color: inherit
+}
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
+h1, h2, h3 {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  margin-top: 40px;
 }
